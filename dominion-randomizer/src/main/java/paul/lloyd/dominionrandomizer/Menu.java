@@ -39,7 +39,7 @@ public class Menu {
             System.out.println("Your current selections are: ");
             int count = 1;
             for (Map.Entry<String, Boolean> entry : parameters.entrySet()) {
-                System.out.println("(" + count + ") " + entry.getKey() + " ---> " + entry.getValue());
+                System.out.printf("%-4s %-30s %-5s %-6s %n", "(" + count + ")", entry.getKey(), "---->", entry.getValue());
                 count++;
             }
             System.out.println("Please type a number of a parameter you'd like to change, or type 0 if you are done setting parameters.");
@@ -71,7 +71,7 @@ public class Menu {
                 }else{
                     include = "Include";
                 }
-                System.out.println("(" + count + ") " + entry.getKey() + " ---> " + include);
+                System.out.printf("%-4s %-22s %-5s %-10s %n", "(" + count + ")", entry.getKey(), "---->", include);
                 count++;
             }
             System.out.println("Please type a number if you'd like to change the inclusion status of that expansion, or type 0 if you are done.");
@@ -102,10 +102,13 @@ public class Menu {
         System.out.println();
         System.out.println("Your Final 10 Random Dominion Cards:");
         System.out.println();
+        System.out.printf("%-8s %-20s %-30s %n", "(Cost)", "NAME", "[Type]");
+        System.out.println("-------------------------------------------------------");
 
         for (Card card : finalTen) {
-            System.out.println("(" + card.getCost() + ") " + card.getName() + " [" + card.getType() + "]");
+            System.out.printf("%-8s %-20s %-30s %n", "(" + card.getCost() + ")", card.getName().toUpperCase(), "[" + card.getType() + "]");
             System.out.println(card.getDescription());
+            System.out.println();
         }
     }
 
