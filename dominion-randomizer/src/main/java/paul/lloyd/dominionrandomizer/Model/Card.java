@@ -1,6 +1,4 @@
-package paul.lloyd.dominionrandomizer;
-
-import java.util.Comparator;
+package paul.lloyd.dominionrandomizer.Model;
 
 public class Card implements Comparable {
 

@@ -1,8 +1,7 @@
 package paul.lloyd.dominionrandomizer;
 
-import java.awt.*;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
+import paul.lloyd.dominionrandomizer.Model.Card;
+
 import java.util.*;
 import java.util.List;
 

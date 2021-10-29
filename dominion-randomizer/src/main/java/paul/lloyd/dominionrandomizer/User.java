@@ -1,5 +1,7 @@
 package paul.lloyd.dominionrandomizer;
 
+import paul.lloyd.dominionrandomizer.Model.Card;
+
 import java.util.*;
 
 public class User {

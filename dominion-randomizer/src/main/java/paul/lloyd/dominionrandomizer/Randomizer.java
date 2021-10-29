@@ -1,8 +1,8 @@
 package paul.lloyd.dominionrandomizer;
 
-import java.text.Collator;
+import paul.lloyd.dominionrandomizer.Model.Card;
+
 import java.util.*;
-import java.util.function.ToIntFunction;
 
 public class Randomizer {
 

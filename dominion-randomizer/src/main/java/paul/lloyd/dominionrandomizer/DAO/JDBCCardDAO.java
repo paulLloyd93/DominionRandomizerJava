@@ -1,14 +1,15 @@
-package paul.lloyd.dominionrandomizer;
+package paul.lloyd.dominionrandomizer.DAO;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
+import paul.lloyd.dominionrandomizer.Model.Card;
 
 import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class JDBCCardDAO implements CardDAO{
+public class JDBCCardDAO implements CardDAO {
 
     private JdbcTemplate jdbcTemplate;
 
